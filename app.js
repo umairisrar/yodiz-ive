@@ -27,7 +27,7 @@ function handleSayHello(req, res) {
   var mailOptions = {
     from: 'umair.israr92@gmail.com', // sender address
   //  to: 'DP+issue@comp7000.cloudintra.com', // list of receivers
-    to: req.body.project_key+'+'+req.body.item_type+'@comp7000.cloudintra.com', // list of receivers
+    to: req.body.project_key+'+'+req.body.item_type+'@'+req.body.item_type+'.cloudintra.com', // list of receivers
     subject: 'Test email from bot', // Subject line
     text: text //, // plaintext body
     // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
