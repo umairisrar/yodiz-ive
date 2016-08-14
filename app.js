@@ -3,6 +3,7 @@ var nodemailer = require('nodemailer');
 var bodyParser = require('body-parser');
 var app = express();
 var router = express.Router();
+var port = process.env.PORT || 3000; 
 // configure the app to use bodyParser()
 app.use(bodyParser.urlencoded({
     extended: true
@@ -42,7 +43,7 @@ transporter.sendMail(mailOptions, function(error, info){
     }
 });
 }
-app.listen(process.env.port||3000,function(){
+app.listen(port,function(){
 console.log("Express Started on Port 3000");
 });
 module.exports=router;
