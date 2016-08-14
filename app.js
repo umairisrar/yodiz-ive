@@ -18,14 +18,14 @@ function handleSayHello(req, res) {
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: 'umair.israr92@gmail.com', // Your email id
-            pass: '352010203576' // Your password
+            user: 'fbhp92@gmail.com', // Your email id
+            pass: 'complain@ptcl' // Your password
         }
     });
 
   var text = 'Hello world from \n\n' ;
   var mailOptions = {
-    from: 'umair.israr92@gmail.com', // sender address
+    from: 'fbhp92@gmail.com', // sender address
   //  to: 'DP+issue@comp7000.cloudintra.com', // list of receivers
     to: req.body.project_key+'+'+req.body.item_type+'@'+req.body.domain_name+'.cloudintra.com', // list of receivers
     subject: 'Test email from bot', // Subject line
