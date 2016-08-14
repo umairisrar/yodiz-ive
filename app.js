@@ -37,6 +37,12 @@ transporter.sendMail(mailOptions, function(error, info){
 
 }
 
-app.listen(process.env.port||3000,function(){
-console.log("Express Started on Port ");
+
+app.post('/email', function (req, res) {
+  res.send('Got a POST request');
 });
+
+app.listen(process.env.port||3000,function(){
+console.log("Express Started on Port 3000");
+});
+module.exports=router;
