@@ -13,7 +13,7 @@ transporter.sendMail({
 */
 var express = require('express');
 var nodemailer = require('nodemailer');
-
+var app = express();
 var router = express.Router();
 app.use('/sayHello', router);
 router.post('/', handleSayHello); // handle the route at yourdomain.com/sayHello
