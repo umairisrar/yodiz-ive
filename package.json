@@ -4,13 +4,12 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "nodemailer":"2.5.0",
-    "express": "^4.13.4"
-
+    "express": "^4.13.4",
+    "body-parser":"*"
   },
   "author": "",
   "license": "ISC"
