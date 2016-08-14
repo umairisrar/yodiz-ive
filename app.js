@@ -1,5 +1,4 @@
-var express = require('express'),
-var router   =express.Router();
+
 /*var  nodemailer=require('nodemailer');
 
 var transporter = nodemailer.createTransport();
@@ -12,6 +11,7 @@ transporter.sendMail({
    text: 'hello world!'
 });
 */
+var express = require('express');
 var nodemailer = require('nodemailer');
 
 var router = express.Router();
