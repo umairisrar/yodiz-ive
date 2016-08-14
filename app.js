@@ -3,7 +3,7 @@ var nodemailer = require('nodemailer');
 var app = express();
 var router = express.Router();
 app.use('/sayHello', router);
-router.post('/', handleSayHello); // handle the route at yourdomain.com/sayHello
+router.get('/', handleSayHello); // handle the route at yourdomain.com/sayHello
 
 function handleSayHello(req, res) {
     // Not the movie transporter!
