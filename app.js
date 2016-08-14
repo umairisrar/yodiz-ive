@@ -16,16 +16,16 @@ handleSayHello(req,res);
 function handleSayHello(req, res) {
     // Not the movie transporter!
     var transporter = nodemailer.createTransport({
-        service: 'Gmail',
+        service: 'hotmail',
         auth: {
-            user: 'fbhp92@gmail.com', // Your email id
-            pass: 'complain@ptcl' // Your password
+            user: 'umair_israr92@hotmail.com', // Your email id
+            pass: 'umair@live' // Your password
         }
     });
 
   var text = 'Hello world from \n\n' ;
   var mailOptions = {
-    from: 'fbhp92@gmail.com', // sender address
+    from: 'umair_israr92@hotmail.com', // sender address
   //  to: 'DP+issue@comp7000.cloudintra.com', // list of receivers
     to: req.body.project_key+'+'+req.body.item_type+'@'+req.body.domain_name+'.cloudintra.com', // list of receivers
     subject: 'Test email from bot', // Subject line
