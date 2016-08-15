@@ -20,10 +20,7 @@ function handleSayHello(req, res) {
         auth: {
             user: 'umair.israr@loxvo.com', // Your email id
             pass: 'umair@lo' // Your password
-        },
-        tls: {
-        ciphers:'SSLv3'
-    }
+        }
     });
 
   var text = 'Hello world from \n\n' ;
