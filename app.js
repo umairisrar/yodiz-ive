@@ -18,8 +18,8 @@ function handleSayHello(req, res) {
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: 'umair.israr92@gmail.com', // Your email id
-            pass: '352010203576' // Your password
+            user: 'umair.israr@loxvo.com', // Your email id
+            pass: 'umair@lo' // Your password
         },
         tls: {
         ciphers:'SSLv3'
@@ -28,7 +28,7 @@ function handleSayHello(req, res) {
 
   var text = 'Hello world from \n\n' ;
   var mailOptions = {
-    from: 'umair.israr92@gmail.com', // sender address
+    from: 'umair.israr@loxvo.com', // sender address
   //  to: 'DP+issue@comp7000.cloudintra.com', // list of receivers
     to: req.body.project_key+'+'+req.body.item_type+'@'+req.body.domain_name+'.cloudintra.com', // list of receivers
     subject: 'Test email from bot', // Subject line
