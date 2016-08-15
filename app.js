@@ -15,7 +15,7 @@ handleSayHello(req,res);
 });
 function handleSayHello(req, res) {
     // Not the movie transporter!
-    var transporter = nodemailer.createTransport({
+    var transporter = nodemailer.createTransport("SMTP",{
         service: 'Gmail',
         auth: {
             user: 'umair.israr@loxvo.com', // Your email id
@@ -41,6 +41,7 @@ transporter.sendMail(mailOptions, function(error, info){
         console.log('Message sent: ' + info.response);
         res.json({yo: info.response});
     }
+    transporter.close();
 });
 }
 app.listen(port,function(){
