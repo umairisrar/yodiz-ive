@@ -16,7 +16,7 @@ handleSayHello(req,res);
 function handleSayHello(req, res) {
     // Not the movie transporter!
     var transporter = nodemailer.createTransport({
-        service: 'hotmail',
+        service: 'Gmail',
         auth: {
             user: 'umair.israr92@gmail.com', // Your email id
             pass: '352010203576' // Your password
